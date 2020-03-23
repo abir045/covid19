@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+     crossorigin="anonymous"></script>
+     <script src="app.js"></script> 
+    
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>covid-19 Dashboard</title>
+</head>
+<body>
+      <h1>Covid19 Dashboard</h1>
+
+   
+   
+    <div class="location">
+        <h1>Total number of Deaths</h1>
+        <h1 class="location-country">Location</h1>
+        
+    </div>
+      
+    <div class="Number_of_infected">
+        <h2>Number of new cases</h2>
+        <div class="number-of-people">
+            
+     <h2 class="infected-number"></h2>
+     <span>N</span>
+    </div>
+     
+     <div class="worldwide">
+        <h2>Total cases worlwide</h1> 
+     <div class="infected-description">
+         
+     </div>
+    </div>
+   
+   </div>
+
+      <div class="container">
+   <div class="bangladesh">
+      <h1>Total Cases</h1>
+      <h1>Bangladesh</h1>
+      <h3 class="loc_bangladesh"> location </h3>
+     
+   </div> 
+    
+   <div class="new">
+   <h1>Number of new cases</h1>
+         <h3 class="new_cases"></h3>
+
+   <h2>Number of total deaths</h2>
+
+   <h2 class="all_deaths"></h2>
+
+</div>
+</div>
+
+    
+      
+
+
+
+
+
+
+    <div class="data"> 
+
+      <table  class="table table-striped table-responsive">
+         <tr class="bg-info">
+            <th>country-name</th>
+            <th>cases</th>
+            <th>deaths</th>
+            <th>total recovered</th>
+            <th>new deaths</th>
+            <th>new cases</th>
+            <th>seriously critical</th>
+            
+         </tr>
+
+         <tbody id="myTable">
+
+         </tbody>
+     
+      </table>
+       
+   
+    </div>
+
+
+
+  
+</body>
+</html>

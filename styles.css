@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+
+body{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    font-family: sans-serif;
+    color: white;
+
+}
+
+
+.location,
+.Number_of_infected{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Number_of_infected{
+    flex-direction: column;
+    font-size: 30px;
+}
+
+
+
+
+
+.number-of-people{
+
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number-of-people span{
+    margin: 10px;
+    font-size: 30px;;
+}
+
+.number-of-people h2{
+
+    font-size: 40px;
+
+}
+  
+
+.worldwide h2{
+    margin: 20px ;
+    align-items: center;
+}
+
+
+.infected-description{
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table{
+    
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        border: 1px solid #ddd;
+        color: white;
+ 
+     
+       
+     
+        
+      }
+          
+      th, td {
+          margin: 10px 10px;
+        text-align: center;
+        padding: 8px;
+      }
+      
+.data {
+     
+       align-items: center;
+       justify-content: space-around;
+       font-size: 20px;
+       height: 50%;
+       width: 50%;
+       overflow: auto;
+}      
+
+
+.bangladesh{
+ 
+    width: 50%;
+  
+   
+    align-items: left;
+    justify-content: center;
+  
+}
+
+.new_cases{
+ 
+  
+    justify-content: center;
+    align-items:center;
+    font-size: 25px;
+}
+
+.all_deaths{
+  
+   
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.container{
+   border: 1px solid rgba(43, 41, 39, 0.74) ;
+    display: flex;
+    height: 40vh;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+}
