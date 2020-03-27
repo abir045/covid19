@@ -6,7 +6,7 @@
 
 
 body{
-    height: 200vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,10 +19,13 @@ body{
 
 
 .location,
-.Number_of_infected{ 
-    height: 30vh;
+.Number_of_infected,
+.worldwide{ 
+    height: 20vh;
     width: 50%;
     display: flex;
+    flex: 1;
+    margin:auto;
     justify-content: space-around;
     align-items: center;
   
@@ -38,6 +41,8 @@ body{
 
 
 
+
+
 .number-of-people{
 
     display:flex;
@@ -47,7 +52,7 @@ body{
 }
 
 .number-of-people span{
-    margin: 10px;
+    margin: auto;
     font-size: 30px;
 }
 
@@ -58,16 +63,15 @@ body{
 }
   
 
-.worldwide h2{
-    margin: 20px ;
-    align-items: center;
-}
+
 
 
 .infected-description{
-    margin: 20px;
+    margin: auto;
+    width: 50%;
     align-items: center;
     display: flex;
+    flex:1;
     justify-content: space-around;
 }
 
@@ -78,6 +82,9 @@ body{
         width: 100%;
         border: 1px solid #ddd;
         color: white;
+        align-items: center;
+        justify-content: space-around;
+   
        
     
      
@@ -87,59 +94,54 @@ body{
       }
           
       th, td {
-          margin: 10px 10px;
+          margin: auto auto;
         text-align: center;
         padding: 8px;
       }
       
 .data {
-     
+   
        align-items: center;
        justify-content: space-around;
-       font-size: 20px;
+       font-size: 15px;
+       height: 75vh;
        overflow-y: auto;
        width: 50%;
+       flex: 1;
       
    
 }      
 
 
-.bangladesh{
- 
-    width: 50%;
-    flex-direction: column;
-    height: 40vh;
-    align-items: left;
-    justify-content: space-around;
-   
-  
-}
 
+
+
+
+
+/*
 .new_cases{
  
-  
+    display: flex; 
     justify-content: space-around;
     align-items:center;
     flex-direction: column;
+
     font-size: 25px;
+    flex: 1;
    
 }
 
-.all_deaths{
-  
-   
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    font-size: 25px;
-}
+*/
 
 
 .container{
   
     display: flex;
-    height: 30vh;
+    height: 70vh;
+    flex:1;
+    width: 50%;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
     justify-content: space-around;
+    font-size: 15px;
 }
