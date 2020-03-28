@@ -152,7 +152,7 @@ $.ajax({
      let allDeathsBangladesh = document.querySelector('.all_deaths');
    
     totalCasesBangladesh.textContent = data.latest_stat_by_country[0].total_cases;
-    newCasesBangladesh.textContent =   data.latest_stat_by_country[0].new_cases;
+    newCasesBangladesh.textContent =   data.latest_stat_by_country[0].active_cases;
     allDeathsBangladesh.textContent = data.latest_stat_by_country[0].total_deaths;
    
     console.log(totalCasesBangladesh.textContent);
