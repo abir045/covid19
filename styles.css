@@ -6,7 +6,7 @@
 
 
 body{
-    height: 150vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,11 +19,12 @@ body{
 
 
 .location,
-.Number_of_infected,
-.worldwide{ 
-    height: 20vh;
+.Number_of_infected
+{ 
+    height: 10vh;
     width: 50%;
     display: flex;
+    flex-direction:column;
     flex: 1;
     margin:auto;
     justify-content: space-around;
@@ -32,11 +33,10 @@ body{
 }
 
 .Number_of_infected{
-    flex-direction: column;
-    font-size: 30px;
+    
+    font-size: 25px;
     
 }
-
 
 
 
@@ -75,6 +75,8 @@ body{
     justify-content: space-around;
 }
 
+
+
 .table{
     
         border-collapse: collapse;
@@ -84,6 +86,8 @@ body{
         color: white;
         align-items: center;
         justify-content: space-around;
+        flex: 1;
+        flex-direction: column;
    
        
     
@@ -102,46 +106,108 @@ body{
 .data {
    
        align-items: center;
-       justify-content: space-around;
-       font-size: 15px;
-       height: 75vh;
-       overflow-y: auto;
+      
+       font-size: 20px;
+       height: 50vh;
+       overflow-y: scroll;
+       overflow-x: scroll;
        width: 50%;
-       flex: 1;
+       margin: auto;
       
    
 }      
 
 
 
-
-
-
-
-/*
-.new_cases{
- 
-    display: flex; 
-    justify-content: space-around;
-    align-items:center;
-    flex-direction: column;
-
-    font-size: 25px;
-    flex: 1;
-   
-}
-
-*/
-
-
 .container{
   
     display: flex;
-    height: 70vh;
+    height: 20vh;
     flex:1;
     width: 50%;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
     justify-content: space-around;
     font-size: 15px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+        
+         .location{
+            
+             margin-top: 5vh;
+             text-align: center;
+             flex:1;
+            
+         }
+        
+         .Number_of_infected{
+            padding: 5vh;
+            text-align: center;
+            padding-bottom: 5vh;
+            flex:1;
+         }
+
+         .worldwide{
+            
+           
+             text-align: center;
+             padding-bottom: 5vh;
+             flex:1;
+         }
+
+         .bd{
+             font-size: 10px;
+             text-align: center;
+             
+             padding-left: 5vh;
+             flex:1;
+         }
+         .active{
+
+            font-size: 10px;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            text-align: center;
+            flex:1;
+
+         }
+
+         .totalDeath{
+
+            font-size: 10px;
+            flex:1;
+            text-align: center;
+            padding-right: 2vh;
+         
+
+         }
+
+         
+
+         .data{
+            
+             width: auto;
+             height: 75vh;
+             font-size: 10px;
+             text-align: center;
+             overflow-y: scroll;
+             overflow-x: scroll;
+             padding-top: 5vh;
+             flex:1;
+          
+             
+         }
+
+         .header{
+             margin-left: 5vh;
+             text-align: center;
+         }
+
+       
 }
