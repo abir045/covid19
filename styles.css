@@ -21,7 +21,7 @@ body{
 .location,
 .Number_of_infected
 { 
-    height: 10vh;
+    height: 20vh;
     width: 50%;
     display: flex;
     flex-direction:column;
