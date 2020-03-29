@@ -1,9 +1,9 @@
 window.addEventListener('load', ()=> {
     let long;
     let lat;
-    let infectedDescription = document.querySelector('.infected-description');
-    let infectedPeople = document.querySelector('.number-of-people');
-    let locationCountry= document.querySelector('.location-country');
+    let totalRecovered = document.querySelector('.total-recovered');
+    let allDeath = document.querySelector('.total-deaths');
+    let totalCases= document.querySelector('.total-cases');
     
     
  
@@ -42,11 +42,11 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
 
           
 
-           infectedDescription.textContent = data.total_cases;
-           infectedPeople.textContent = data.new_cases;
+          allDeath.textContent = data.total_deaths;
+          totalRecovered.textContent = data.total_recovered;
            
-           locationCountry.textContent = data.total_deaths;
-        
+          totalCases.textContent = data.total_cases;
+         
 
 
 
