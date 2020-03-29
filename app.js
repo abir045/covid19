@@ -10,12 +10,13 @@ window.addEventListener('load', ()=> {
     
   
 
-    if(navigator.geolocation){
+   // if(navigator.geolocation)
+    if('load'){
 
-        navigator.geolocation.getCurrentPosition
-        (position=>{
-            long = position.coords.longitude;
-            lat =  position.coords.latitute;
+       // navigator.geolocation.getCurrentPosition
+       // (position=>{
+         //   long = position.coords.longitude;
+           // lat =  position.coords.latitute;
 
 
          // const api = `https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php?country=Denmark`
@@ -55,12 +56,13 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
          
         });
 
-        });
-        
-    }
+        };
+     
+    
+}
 
 
-});
+);
 
 //after load
 
