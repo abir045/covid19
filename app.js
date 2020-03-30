@@ -1,6 +1,5 @@
 window.addEventListener('load', ()=> {
-    let long;
-    let lat;
+    
     let totalRecovered = document.querySelector('.total-recovered');
     let allDeath = document.querySelector('.total-deaths');
     let totalCases= document.querySelector('.total-cases');
@@ -86,7 +85,15 @@ $.ajax({
         console.log(response)
     }
 
+
+
+
+    
+
 })
+
+
+
 
  //making a table from the array
 
@@ -122,12 +129,69 @@ $.ajax({
    
  
 
+
+
+ $('#search-input').on('keyup',function(){
+    let value = $(this).val()
+    console.log('value:', value)
+    //alert( "Handler for .keyup() called." );
+     let data = searchTable(value, myArray)
+    buildTable(data);
+})
+
+
+
  buildTable(myArray);
 
 
+function searchTable(value, data){
+    let filteredData = []
+
+    for (let i=0; i<data.length; i++){
+        value = value.toLowerCase()
+        let countryName = data[i].country_name.toLowerCase()
+
+        if(countryName.includes(value)){
+            filteredData.push(data[i])
+
+        }
+    }
 
 
- //let totalCasesBangladesh = document.querySelectorAll('.loc_bangladesh');
+    return filteredData
+}
+
+
+function buildTable(data){
+    let table = document.getElementById('myTable')
+
+    table.innerHTML = ''
+
+    for(let i=0; i<data.length; i++){
+
+        const row = `<tr>
+                     
+                    <td>${data[i].country_name}</td> 
+                    <td>${data[i].cases}</td>
+                    <td>${data[i].deaths}</td>
+                    <td>${data[i].total_recovered}</td>
+                    <td>${data[i].new_deaths}</td>
+                    <td>${data[i].new_cases}</td>
+                    <td>${data[i].serious_critical}</td>   
+        
+       
+                  </tr  `
+
+            table.innerHTML += row
+
+    }
+}
+
+
+
+
+
+
 
  fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php?country=Bangladesh", {
 	"method": "GET",
@@ -157,7 +221,7 @@ $.ajax({
     newCasesBangladesh.textContent =   data.latest_stat_by_country[0].active_cases;
     allDeathsBangladesh.textContent = data.latest_stat_by_country[0].total_deaths;
    
-    console.log(totalCasesBangladesh.textContent);
+    //console.log(totalCasesBangladesh.textContent);
     
 
 
